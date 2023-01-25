@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Указываем box sizing */
 @import url("https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -52,7 +53,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -68,13 +69,14 @@ select {
 @media (prefers-reduced-motion: reduce) {
   * {
     -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
+
 body {
   font-family: "Roboto";
   display: flex;
@@ -83,6 +85,7 @@ body {
   flex-direction: column;
   height: 100%;
   width: 100%;
+  background-color: rgb(114, 114, 114);
 }
 
 .wrapper {
@@ -100,6 +103,7 @@ body {
   border-radius: 20px;
   box-shadow: 1px 1px 1px black;
 }
+
 @media (max-width: 600px) {
   .wrapper {
     display: grid;
@@ -127,12 +131,14 @@ body {
   border-radius: 5px;
   font-weight: 700;
 }
+
 @media (max-width: 700px) {
   .value {
     min-width: 8rem;
     font-size: 3.5rem;
   }
 }
+
 .value:not(:last-child) {
   margin-bottom: 0.6rem;
 }
@@ -141,6 +147,7 @@ body {
   font-size: 2rem;
   color: orange;
 }
+
 @media (max-width: 700px) {
   .title {
     font-size: 1.6rem;
