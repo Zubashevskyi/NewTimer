@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   function setClock(endtime) {
-    const days = document.querySelector('#days');
-    const hours = document.querySelector('#hours');
-    const minutes = document.querySelector('#minutes');
-    const seconds = document.querySelector('#seconds');
-    const inteval = setInterval(() => updateCLock(), 1000);
+    let days = document.querySelector('#days');
+    let hours = document.querySelector('#hours');
+    let minutes = document.querySelector('#minutes');
+    let seconds = document.querySelector('#seconds');
+    let inteval = setInterval(() => updateCLock(), 1000);
 
     updateCLock()
 
